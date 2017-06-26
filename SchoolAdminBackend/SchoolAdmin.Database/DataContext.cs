@@ -3,7 +3,7 @@ using SchoolAdmin.Core.Entities;
 
 namespace SchoolAdmin.Database
 {
-    internal class DataContext: DbContext
+    internal class DataContext: DbContext, IDataContext
     {
         public DbSet<Course> Courses { get; set; }
         public DbSet<Group> Groups { get; set; }
